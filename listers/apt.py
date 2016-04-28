@@ -2,8 +2,8 @@ import os, subprocess
 from subprocess import PIPE
 import listers
 
-from .util import register as register_pkg
-from .package import PackageLister, restrict_width
+from .util import register as register, restrict_width
+from .package import PackageLister
 
 
 class AptLister(PackageLister):
@@ -26,4 +26,4 @@ class AptLister(PackageLister):
     def get_install_sh(self, pkg_list):
         return restrict_width("sudo apt-get install", pkg_list)
 
-register_pkg('apt',AptLister)
+register('apt',AptLister)
