@@ -24,6 +24,6 @@ class AptLister(PackageLister):
         return True
 
     def get_install_sh(self, pkg_list):
-        return restrict_width("sudo apt-get install", pkg_list)
+        return restrict_width(self.APT_INSTALL, pkg_list)
 
 register('apt',AptLister)
