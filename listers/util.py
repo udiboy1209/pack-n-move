@@ -24,4 +24,4 @@ def restrict_width(command, args):
             line_len = len(arg) + 1
             line = [arg]
 
-    return ' \\\n'.join(lines)
+    return ' \\\n'.join(lines) + '\n\n'
