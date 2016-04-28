@@ -7,6 +7,7 @@ from .package import PackageLister
 
 
 class PipLister(PackageLister):
+    PRIORITY = 1
     PIP_INSTALL = 'sudo pip install '
     CMD_PIP_LIST = ['pip', 'list']
 

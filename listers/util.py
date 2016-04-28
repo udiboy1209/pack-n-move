@@ -4,7 +4,7 @@ def register(name, classobj):
     _avl_listers[name] = classobj
 
 def get_available_lister_names():
-    return _avl_listers.keys()
+    return sorted(_avl_listers, key=lambda k: _avl_listers[k].PRIORITY)
 
 def get_lister(name):
     return _avl_listers[name]

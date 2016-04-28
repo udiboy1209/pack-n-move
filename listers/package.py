@@ -1,5 +1,6 @@
 class PackageLister():
     DEFAULT_ENABLE = False
+    PRIORITY = 2
     pkg_list = []
 
     def get_pkg_list(self):

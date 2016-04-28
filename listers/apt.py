@@ -7,6 +7,7 @@ from .package import PackageLister
 
 
 class AptLister(PackageLister):
+    PRIORITY = 0
     APT_INSTALL = 'sudo apt-get install '
     CMD_APT_LIST = ['apt-mark', 'showmanual']
     CMD_INIT_PKG_LIST = ['gzip', '-dc', '/var/log/installer/initial-status.gz']
