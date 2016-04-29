@@ -13,7 +13,7 @@ def restrict_width(command, args):
     lines = []
 
     line = [command]
-    line_len = len(command)
+    line_len = len(command) + 1
 
     for arg in args:
         if line_len + len(arg) + 1 < 80:
@@ -23,5 +23,6 @@ def restrict_width(command, args):
             lines.append(' '.join(line))
             line_len = len(arg) + 1
             line = [arg]
+    lines.append(' '.join(line))
 
     return ' \\\n'.join(lines) + '\n\n'
