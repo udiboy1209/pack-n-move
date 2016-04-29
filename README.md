@@ -12,7 +12,7 @@ It is a python script which lists all the packages you currently have
 installed in your current home and generates a shell script which reinstalls 
 them on your new home.
 
-This is done using modules in the [listers](listers/) package, which follow a tandard template.
+This is done using modules in the [listers](listers/) package, which follow a standard template.
 
 Listers
 -------
