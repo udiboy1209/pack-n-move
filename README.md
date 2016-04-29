@@ -22,3 +22,4 @@ The currently implemented ones are
  - [AptLister](listers/apt.py): for apt packages on a Debian system. Only lists down manually installed packages
  - [PipLister](listers/pip.py): for python packages installed using pip
  - [GemLister](listers/gem.py): for ruby packages installed using gem
+ - [NpmLister](listers/npm.py): for Node.js packages installed using npm
